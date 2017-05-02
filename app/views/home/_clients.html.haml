@@ -1,0 +1,29 @@
+/ Clients
+%section#clients.section.p-t-0
+  .container
+    .row
+      .col-sm-12.text-center
+        %h3.title Trusted by Thousands
+        %p.text-muted.sub-title
+          The clean and well commented code allows easy customization of the theme.It's
+          %br/
+          designed for describing your app, agency or business.
+    / end row
+    .row.text-center
+      .col-sm-12
+        %ul.list-inline.client-list
+          %li
+            %a{:href => "", :title => "Microsoft"}
+              = image_tag("clients/microsoft.png", alt: "clients")
+          %li
+            %a{:href => "", :title => "Google"}
+              = image_tag("clients/google.png", alt: "clients")
+          %li
+            %a{:href => "", :title => "Instagram"}
+              = image_tag("clients/instagram.png", alt: "clients")
+          %li
+            %a{:href => "", :title => "Converse"}
+              = image_tag("clients/converse.png", alt: "clients")
+      / end Col
+    / end row
+/ End  Clients

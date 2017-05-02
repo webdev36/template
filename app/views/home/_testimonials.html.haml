@@ -1,0 +1,36 @@
+/ Testimonials section
+%section.section.bg-img-1
+  .bg-overlay
+  .container
+    .row
+      .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+        .owl-carousel.text-center
+          .item
+            .testimonial-box
+              %h4 Excellent support for a tricky issue related to our customization of the template. Author kept us updated as he made progress on the issue and emailed us a patch when he was done.
+              = image_tag("user.jpg", class: "testi-user img-circle", alt: "testimonials-user")
+              %p - Ubold User
+          .item
+            .testimonial-box
+              %h4 Flexible, Everything is in, Suuuuuper light, even for the code is much easier to cut and make it a theme for a productive app..
+              = image_tag("user2.jpg", class: "testi-user img-circle", alt: "testimonials-user")
+              %p - Ubold User
+          .item
+            .testimonial-box
+              %h4 Not only the code, design and support are awesome, but they also update it constantly the template with new content, new plugins. I will buy surely another coderthemes template!
+              = image_tag("user3.jpg", class: "testi-user img-circle", alt: "testimonials-user")
+              %p - Ubold User
+/ End Testimonials section
+:javascript
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      responsive:{
+          0:{
+              items:1
+          }
+      }
+  })

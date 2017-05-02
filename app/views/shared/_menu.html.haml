@@ -1,0 +1,36 @@
+/ Navbar
+#sticky-nav.navbar.navbar-custom.sticky.navbar-fixed-top{:role => "navigation"}
+  .container
+    / Navbar-header
+    .navbar-header
+      / Responsive menu button
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / LOGO
+      %a.navbar-brand.logo{:href => "index.html"}
+        UB
+        %span.text-custom> o
+        ld
+    / end navbar-header
+    / menu
+    #navbar-menu.navbar-collapse.collapse
+      / Navbar right
+      %ul.nav.navbar-nav.navbar-right
+        %li.active
+          %a.nav-link{:href => "#home"} Home
+        %li
+          %a.nav-link{:href => "#features"} Features
+        %li
+          %a.nav-link{:href => "#pricing"} Plans
+        %li
+          %a.nav-link{:href => "#clients"} Clients
+        %li
+          %a{:href => new_session_path(:user)} Login
+        %li
+          %a.btn.btn-white-bordered.navbar-btn{:href => ""} Try for Free
+    / /Menu
+  / end container
+/ End navbar-custom
